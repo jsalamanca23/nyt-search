@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
 </head>
@@ -13,20 +14,21 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/nyt-search.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <div class="container">
         <div class="jumbotron">
-            <nav class="display-4 navbar navbar-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">New York Times Search</a>
+            <nav class="navbar navbar-light" style="background-color: #44aaee">
+                New York Times Search
             </nav>
         </div>
 
-        <div class="container-form ">
+        <div class="container">
             <form>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Search Term</label>
-                    <input type="text" class="form-control" id="searchTerm" placeholder="">
+                    <input type="text" class="form-control" id="searchTerm" placeholder="enter a search term to start searching...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
@@ -36,19 +38,30 @@
                         <option>3</option>
                         <option>4</option>
                         <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Start Year(Optional)</label>
-                    <input type="text" class="form-control" id="startYear" placeholder="">
+                    <input type="date" class="form-control" id="startYear" placeholder="YYYYMMDD">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">End Year(Optional)</label>
-                    <input type="text" class="form-control" id="endYear" placeholder="">
+                    <input type="date" class="form-control" id="endYear" placeholder="YYYYMMDD">
                 </div>
             </form>
         </div>
+        <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-search"></span>Search
+        </button>
+            <a href="#" class="btn btn-info">
+                <span class="glyphicon glyphicon-trash"></span>Delete</a>
     </div>
+
 </body>
 
 </html>
